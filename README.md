@@ -4,6 +4,6 @@ This web application is very simple in nature.  No back end or database technolo
 
 ### Example Pictures
 
-![Add a Doctor](images/add-a-doctor)
+![Add a Doctor](https://github.com/thenicknash/doctor-directory-web-app/blob/master/images/add-a-doctor)
 
-![Doctor Directory](images/doctor-directory)
+![Doctor Directory](https://github.com/thenicknash/doctor-directory-web-app/blob/master/images/doctor-directory)
