@@ -1,0 +1,16 @@
+td,
+th {
+    font-size: 20px;
+}
+
+.black-hr {
+    border-bottom: 3px solid black;
+}
+
+tr th {
+    background-color: #209cee;
+}
+
+.table thead th {
+    color: #fff;
+}

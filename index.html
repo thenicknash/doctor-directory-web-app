@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Meta -->
+		<meta name="description" content="A simple, searchable JavaScript table.">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+		<link rel="stylesheet" href="styles.css">
+
+		<title>Doctor Directory</title>
+
+		<!-- Font Awesome -->
+		<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<section class="section">
+			<div class="container">
+
+				<!-- Web application title -->
+				<h1 class="is-size-1 has-text-centered">Doctor Directory Web Application &nbsp;<span class="icon has-text-info"><i class="fas fa-hospital"></i></span></h1>
+
+				<br>
+				<br>
+				<br>
+
+				<!-- Add doctor module -->
+				<div class="add-doctor-module">
+
+					<h3 class="is-size-2">Add a Doctor</h3>
+
+					<hr class="black-hr">
+
+					<!-- Doctor name -->
+					<div class="field">
+						<label class="label">Name</label>
+						<div class="control">
+							<input id="doctorName" class="input" type="text" placeholder="Name">
+						</div>
+					</div>
+
+					<!-- City -->
+					<div class="field">
+						<label class="label">City</label>
+						<div class="control">
+							<input id="city" class="input" type="text" placeholder="City">
+						</div>
+					</div>
+
+					<!-- Phone -->
+					<div class="field">
+						<label class="label">Phone</label>
+						<div class="control">
+							<input id="phone" class="input" type="text" placeholder="Phone">
+						</div>
+					</div>
+
+					<!-- Fax -->
+					<div class="field">
+						<label class="label">Fax</label>
+						<div class="control">
+							<input id="fax" class="input" type="text" placeholder="Fax">
+						</div>
+					</div>
+
+					<!-- City -->
+					<div class="field">
+						<div class="control">
+							<button id="addDoctorButton" class="button is-info is-medium is-fullwidth">Add Doctor</button>
+						</div>
+					</div>
+
+				</div>
+
+				<br>
+				<br>
+				<br>
+
+				<!-- Search module -->
+				<div class="search-doctors">
+					<h3 class="is-size-2">Search Doctors</h3>
+
+					<hr class="black-hr">
+
+					<br>
+
+					<p class="is-size-4">You can search by doctor name or city</p>
+
+					<br>
+
+					<div class="field">
+						<div class="control">
+							<input id="searchBarInput" class="input" type="text" placeholder="Search">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<br>
+				<br>
+
+				<!-- Doctor table/directory -->
+				<div class="doctor-directory-module">
+					<h1 class="is-size-2">Doctors Table</h1>
+				
+					<hr class="black-hr">
+
+					<!-- Table of doctor's information -->
+					<table id="doctorTable" class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+						<thead>
+							<tr>
+								<th>Doctor</th>
+								<th>City</th>
+								<th>Phone</th>
+								<th>Fax</th>
+								<th>Edit</th>
+								<th>Delete</th>
+							</tr>
+						</thead>
+						<tbody id="tableBody">
+
+							<!-- Here is where the doctors are displayed and appended through JavaScript -->
+							
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- Modal for editing doctor's info -->
+				<div class="modal">
+					<div class="modal-background"></div>
+					<div class="modal-card">
+						<header class="modal-card-head">
+							<p class="modal-card-title">Edit Doctor Info</p>
+							<button class="delete" aria-label="close"></button>
+						</header>
+						<section class="modal-card-body">
+
+							<!-- Edit doctor info -->
+							<div class="edit-doctor-info">
+
+								<!-- Doctor name -->
+								<div class="field">
+									<label class="label">Name</label>
+									<div class="control">
+										<input id="editDoctorName" class="input" type="text" placeholder="Name">
+									</div>
+								</div>
+			
+								<!-- City -->
+								<div class="field">
+									<label class="label">City</label>
+									<div class="control">
+										<input id="editCity" class="input" type="text" placeholder="City">
+									</div>
+								</div>
+			
+								<!-- Phone -->
+								<div class="field">
+									<label class="label">Phone</label>
+									<div class="control">
+										<input id="editPhone" class="input" type="text" placeholder="Phone">
+									</div>
+								</div>
+			
+								<!-- Fax -->
+								<div class="field">
+									<label class="label">Fax</label>
+									<div class="control">
+										<input id="editFax" class="input" type="text" placeholder="Fax">
+									</div>
+								</div>
+
+							</div>
+
+						</section>
+						<footer class="modal-card-foot">
+							<button id="updateDoctor" class="button is-success">Save Changes</button>
+						</footer>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</body>
+
+	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts.js"></script>
+
+</html>
